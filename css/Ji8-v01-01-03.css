@@ -1,0 +1,288 @@
+/*
+	Linear by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+*/
+
+@charset 'UTF-8';
+
+@font-face {
+	font-family: Times New Roman;
+	src: url('font/fontawesome-webfont.eot@v=4.0.1');
+	src: url('font/fontawesome-webfont.eot@') format('embedded-opentype'), url('font/fontawesome-webfont.woff@v=4.0.1') format('woff'), url('font/fontawesome-webfont.ttf@v=4.0.1') format('truetype'), url('font/fontawesome-webfont.svg@v=4.0.1') format('svg');
+	font-weight: normal;
+	font-style: normal
+}
+
+@media screen and (max-width: 768px) {
+	.nav-menu {
+	  flex-direction: column;
+	  gap: 10px;
+	}
+	#ji8_main table {
+	  width: 100%;
+	}
+  }
+/*********************************************************************************/
+
+/* Basic                                                                         */
+
+/*********************************************************************************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 300;
+	color: #777;
+	font-size: 150%;
+	background-color: #FFFFFF;
+}
+
+/* 整體佈局容器 */
+#layout {
+	display: grid;
+	grid-template-columns: auto;
+	/* 僅控制單列佈局 */
+	grid-template-rows: auto auto auto;
+	/* 按順序排 LOGO、導航列、圖片 */
+	row-gap: 20px;
+	/* 控制垂直間距 */
+	align-items: start;
+	/* 垂直對齊方式 */
+	justify-items: start;
+	/* 水平對齊方式統一在左側 */
+	/*margin-left: 20px;*/
+	/* 設定左邊界基準 */
+	background: #faf0f8;
+}
+
+/* LOGO 部分 */
+#logo_bar {
+	display: flex;
+	align-items: center;
+	/* LOGO 圖片與其他元素基線對齊 */
+	margin-left: 20px;
+	text-align: center;
+}
+
+#hWord_bar {
+	text-align: center;
+	/* 文字區塊的文字居中 */
+	margin-top: 20px;
+	line-height: 1.5;
+}
+
+/* 導覽列 */
+#nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	/* 水平排列導航項目 */
+	gap: 20px;
+	/* 導航按鈕之間的間距 */
+}
+
+/* 內容圖片部分 */
+#image-section img {
+	display: block;
+	/* max-width: 100%; */
+	/* height: auto; */
+}
+
+#header_bar {
+	position: relative;
+	background: url(../images/asesoresenti.jpg) no-repeat bottom center;
+	background-attachment: fixed;
+	/* background-size: cover; */
+	background-size: 2400px;
+	/* 背景保持原始大小 */
+	background-position: center -142px;
+	/* 水平居中，向下偏移 50px */
+	text-align: center;
+	height: 308px;
+	width: 100vw;
+	/* 寬度設置為視窗寬度 */
+	margin: 0;
+	/* 移除外邊距，避免偏移 */
+	padding: 0;
+	/* 移除內邊距，確保對齊 */
+	box-sizing: border-box;
+	/* 確保寬度包含邊框與內邊距 */
+
+
+}
+
+body,
+html {
+	margin: 0;
+	/* 清除全頁面預設邊距 */
+	padding: 0;
+	/* 清除全頁面預設內邊距 */
+	width: 100%;
+	/* 保證頁面內容覆蓋全螢幕 */
+	background: #faf0f8;
+}
+
+
+.nav-links ul {
+	display: flex;
+	gap: 20px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-color: #faf0f8;
+}
+
+.nav-links ul li {
+	padding: 10px 20px;
+}
+
+.nav-links ul li a {
+	/* text-decoration: none; */
+	color: #171717;
+	font-family: "Times New Roman";
+	font-size: 14pt;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.nav-links ul li a:hover {
+	background-color: #ddd;
+}
+
+#hWord_bar a {
+	/* display: block; */
+	font-weight: 220;
+	line-height: 0;
+	font-size: 2.5em;
+	color: #FFF;
+	letter-spacing: -0.05em;
+	margin-top: 0;
+	margin-right: 0;
+	margin-left: 60px;
+	margin-bottom: 1em;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	text-align: left;
+	font-style: oblique;
+	/* text-decoration: none; */
+	width: 100%;
+	/* 寬度設置為視窗寬度 */
+}
+
+#ji8_main {
+	/* position: relative;
+	background: #fff; */
+	/* clip: rect(auto, 10cm, auto, auto); */
+	/* overflow: auto; */
+	/* text-decoration: none; */
+	width: 100vw;
+	/* 寬度設置為視窗寬度 */
+}
+
+#ji8_main p {
+	margin-top: 10px;
+	text-align: center;
+	line-height: 1.5;
+	color: #171717;
+	font-family: "Times New Roman";
+	font-size: 103%;
+}
+
+blockquote {
+	border-left: solid 0.5em #ddd;
+	padding: 1em 0 1em 2em;
+	font-style: italic;
+}
+
+
+/*********************************************************************************/
+
+/* Tweet                                                                         */
+
+/*********************************************************************************/
+
+#tweet {
+	position: relative;
+	text-align: center;
+	background: url(../images/asesoresenti.jpg) no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 195px;
+	width: 100vw;
+	/* width: 1520px; */
+}
+
+#tweet:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(64, 64, 64, 0.5);
+}
+
+#tweet section {
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-color: rgba(255, 255, 255, .1);
+}
+
+#tweet blockquote {
+	margin: 0;
+	/* padding: 1em 4em; */
+	padding: 20px 0px;
+	/* line-height: 1.5em; */
+	font-size: 1.8em;
+	text-align: center;
+	position: relative;
+	border: none;
+	margin: 0;
+	font-weight: 300;
+	color: rgba(255, 255, 255, .6);
+	font-style: italic;
+}
+
+.container {
+	width: 100vw;
+	/* 寬度設置為視窗寬度 */
+	/* margin-left: 30px; */
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	/* padding: 0; */
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	text-align: left;
+	font-family: "Times New Roman";
+	height: 100%;
+}
+
+/* Modifiers */
+
+.container.small {
+	width: 900px;
+}
+
+.container.big {
+	width: 100%;
+	max-width: 1500px;
+	min-width: 1200px;
+}
+
+span {
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	text-align: left;
+	font-family: "Times New Roman";
+}
