@@ -124,7 +124,10 @@ h6 {
     padding: 0;
     display: flex;
     align-items: center;
-    margin-left: 30px;
+    display: flex;             /* 使用 flexbox 來排列項目 */
+    justify-content: space-between; /* 使每個項目平均分布 */
+    margin-left: 25px;
+    margin-right: 40px;
 }
 
 .nav-links li {
@@ -137,6 +140,7 @@ h6 {
     height: 66px;
     overflow: hidden;
     background: #faf0f8;
+	z-index: 9999; /* 設定高層級 */
 }
 
 
@@ -158,11 +162,17 @@ h6 {
 	font-weight: 400;
 	font-style: normal;
 }
-
+.text-section {
+    display: flex;
+    flex-direction: column; /* 讓標題與段落垂直排列 */
+}
 .nav-links ul li a:hover {
 	background-color: #ddd;
 }
-
+.content-wrapper {
+    display: flex;
+    align-items: center; /* 讓文字與圖片垂直置中 */
+}
 #hWord_bar a {
 	/* display: block; */
 	font-weight: 220;
@@ -193,6 +203,7 @@ h6 {
 }
 #ji8_main  {
 	background: #faf0f8;
+    overflow: hidden;
 	
 }
 
@@ -317,6 +328,38 @@ h6 {
     width: 50%; /* 讓兩欄等寬 */
     text-align: center;
 }
+.ji8_main_pic_L {
+    /* width: 50%; */
+    text-align: left;
+    width: 100%;  /* 讓圖片填滿整個 <td> */
+    /* height: 100vh; */
+    object-fit: cover; /* 確保圖片能填滿整個區域，可能會裁切 */
+    display: block;
+}
+.ji8_main_pic_L img {
+    width: 100%;  /* 讓圖片填滿整個 <td> */
+    height: auto; /* 確保圖片與視窗等高 */
+    object-fit: cover; /* 確保圖片能填滿整個區域，可能會裁切 */
+    display: block;
+    margin: 0 auto 0 0;
+    max-width: 100%;  /* 限制圖片不超過 td */
+}
+
+.ji8_main_pic_R{
+    width: 50%; /* 讓兩欄等寬 */
+    text-align: right;
+    width: 100%;  /* 讓圖片填滿整個 <td> */
+    /* height: 100vh; */
+    object-fit: cover; /* 確保圖片能填滿整個區域，可能會裁切 */
+    display: block;
+}
+.ji8_main_pic_R img {
+    width: 100%;  /* 讓圖片填滿整個 <td> */
+    height: auto; /* 確保圖片與視窗等高 */
+    object-fit: cover; /* 確保圖片能填滿整個區域，可能會裁切 */
+    display: block;
+    margin: 0 0 0 auto;
+}
 
 
 .image-section img {
@@ -336,6 +379,8 @@ h6 {
     position: absolute;
     top: 10px; /* 調整位置與頁面邊界的距離 */
     right: 20px; /* 靠右顯示 */
+    width: 40px;  /* 調整適合的寬度 */
+    height: 30px; /* 調整適合的高度 */
 }
 
 .mobile-nav {
@@ -412,7 +457,7 @@ h6 {
 }
 
 .header_bar_table td {
-	padding-left: 10px; 
+	padding-left: 0px; 
 	vertical-align: BOTTOM;
 }
 
@@ -500,15 +545,24 @@ blockquote {
     height: auto;
     margin: 0;
 }
+#split_styleA{
+	display: table;
+}
+#split_styleB{
+	display: none;
+}
 
 /* 表格樣式 */
 .tweet-table {
     color: rgba(255, 255, 255, .6);
     border-collapse: collapse;
-    width: calc(100% - 130px);  /* 保持寬度，避免影響版面 */
     /* margin-left: 50px; */
-    margin-right: 50px; /* 右邊距離也設置以保持對齊 */
     height: 100px;
+	
+	/* height: 140px;  */
+	width: calc(100% - 100px); 
+	margin-left: 40px; 
+	margin-right: 80px; 
 }
 
 /* 單元格間距和對齊 */
@@ -601,9 +655,33 @@ span {
 .nav-links.show {
     display: block;
 }
+.main-table {
+    table-layout: fixed; /* 確保列寬平均分配 */
+    border-collapse: collapse;
+	
+	text-align: center; 
+	/* height: 140px;  */
+	width: calc(100% - 100px); 
+	margin-left: 40px; 
+	margin-right: 40px; 
+	margin-top: 40px;
+}
+
+.main-table td {
+    width: 50%;
+    height: 100%;
+    word-wrap: break-word; 
+}
 
 /* 響應式設計：當螢幕小於 768px (手機) 時 */
 @media screen and (max-width: 768px) {
+	
+	#split_styleA{
+		display: none;
+	}
+	#split_styleB{
+		display: table;
+	}
     .nav-links {
         display: none; /* 隱藏電腦版導覽列 */
     }
@@ -646,6 +724,9 @@ span {
         display: block; /* 顯示手機版下拉選單 */
 		position: relative;
     }
+	.main-table {
+		margin-left: 20px; 
+	}
     .main-table tr {
         display: block;
     }
@@ -682,6 +763,16 @@ span {
         margin-bottom: 10px; /* 欄位間距 */
         text-align: left; /* 文字靠左 */
     }
+	.header_bar_left-column img{
+		width: 280px;
+		height: auto;
+	}
+
+    .header_bar_right-column {
+	}
+	.heading{
+        font-size: 20px; /* 缩小字形 */
+	}
 	#hWord_bar {
 		margin-top: 0px;
 		line-height: 0.8;
@@ -720,6 +811,7 @@ span {
     }
 
     .tweet-table {
+		margin-left: 25px;
         width: 100%; /* 使表格填滿屏幕寬度 */
     }
 
@@ -731,7 +823,9 @@ span {
     /* 左欄和右欄的文字調整 */
     .left-column, .right-column {
         font-size: 12px; /* 將左邊和右邊的文字縮小 */
-    }
+		line-height: 0;
+	}
+    
 
     .left-column span, .right-column span {
 		/* 確保 span 元素內文字縮小 */
@@ -767,5 +861,13 @@ span {
 		text-align: center; 
 		width: calc(100% - 20px); 
 		margin-left: 0px; 
+	}
+	.inner-table{
+		width: 280px;
+
+	}
+	.ji8_main_pic_L img{
+		width: 280px;
+		height: auto;
 	}
 }

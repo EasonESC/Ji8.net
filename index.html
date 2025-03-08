@@ -75,58 +75,70 @@
             <table class="main-table">
                 <tr>
                     <!-- 第一欄，靠左對齊 -->
-                    <td class="ji8_main_pic">
-                        <table>
+                    <td>
+                        <table class="inner-table">
                             <tr>
-                                <div class="image-section">
+                                <td>
+                                    <div class="ji8_main_pic_L">
+                                        <a href="https://nix.global" target="_blank" class="image full">
+                                            <img src="./images/pic03_2.jpg" alt="NiX Global" />
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
                                     <a href="https://nix.global" target="_blank" class="image full">
-                                        <img src="./images/pic03_2.jpg" alt="NiX Global" />
+                                        <h1 class="heading">NiX.GLOBAL - 8VG.ORG</h1>
                                     </a>
-                                </div>
                             </tr>
-                            <tr>
-                                <a href="https://nix.global" target="_blank" class="image full">
-                                    <h1 class="heading">NiX.GLOBAL - 8VG.ORG</h1>
-                                </a>
-                            </tr>
-                            <tr>
-                                <p>iDomain<br> iPAY<br> iSERVE<br> iMALL</p>
-                            </tr>
-                        </table>
                     </td>
-
-                    <!-- 第二欄，靠右對齊 -->
-                    <td class="ji8_main_pic">
-                        <table>
-                            <tr>
-                                <div class="image-section">
-                                    <a href="https://81i.org/" target="_blank" class="image full">
-                                        <img src="./images/pic06_2.png" alt="81i.org" />
-                                    </a>
-                                </div>
-                            </tr>
-                            <tr>
-                                <a href="https://81i.org/" target="_blank" class="image full">
-                                    <h1 class="heading">81i.ORG - SRPG</h1>
-                                </a>
-                            </tr>
-                            <tr>
-                                <p>SRPG Self Recursive Power Generator
-                                    <br> The FUTURE of EARTH
-                                    <br> and our
-                                    <br> GENERATIONs to COME!
-                                </p>
-                            </tr>
-                        </table>
+                <tr>
+                    <td>
+                        <p>iDomain<br> iPAY<br> iSERVE<br> iMALL</p>
                     </td>
                 </tr>
+            </table>
+            </td>
+
+            <!-- 第二欄，靠右對齊 -->
+            <td>
+                <table class="inner-table">
+                    <tr>
+                        <td>
+                            <div class="ji8_main_pic_R">
+                                <a href="https://81i.org/" target="_blank" class="image full">
+                                    <img src="./images/pic06_2.png" alt="81i.org" />
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://81i.org/" target="_blank" class="image full">
+                                <h1 class="heading">81i.ORG - SRPG</h1>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>SRPG Self Recursive Power Generator
+                                <br> The FUTURE of EARTH
+                                <br> and our
+                                <br> GENERATIONs to COME!
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            </tr>
             </table>
         </div>
     </div>
     <div id="tweet">
-        <div class="container">
+        <div  class="container">
             <blockquote class="tweet-blockquote">
-                <table class="tweet-table">
+                <table id="split_styleA" class="tweet-table">
                     <tr>
                         <td class="left-column"><span>iNFiNiTE iNTEGRATiON ‧ iNTEGRATE iNFiNiTi</span></td>
                         <td class="right-column">
@@ -140,17 +152,37 @@
                         </td>
                     </tr>
                 </table>
+                <table id="split_styleB" class="tweet-table">
+                    <tr>
+                        <td class="left-column"><span>iNFiNiTE iNTEGRATiON ‧ iNTEGRATE iNFiNiTi</span></td>
+                    
+                    </tr>
+                    <tr>
+                        <td class="left-column"><span>無限整合 ‧ 整合無限</span></td>
+                        
+                    </tr>
+                    <tr>    
+                        <td class="left-column">
+                            <span>Contact US: <a href="mailto:Ji8@Ji8.net" class="email-link">Ji8@Ji8.net</a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left-column">
+                            <span class="footer-text">Ji8.net &copy; 2020</span>
+                        </td>
+                    </tr>
+                </table>
             </blockquote>
         </div>
     </div>
     <script>
-        function toggleMenu() {   
-             var menu = document.getElementById("mobile-nav");
-                if (menu.style.display === "block") {
-                    menu.style.display = "none";
-                } else {
-                    menu.style.display = "block";
-                }
+        function toggleMenu() {
+            var menu = document.getElementById("mobile-nav");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
         }
     </script>
 </body>
