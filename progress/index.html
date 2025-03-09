@@ -14,7 +14,7 @@
 	<script src="../js/skel-panels.min.js"></script>
 	<script src="../js/init.js"></script>
 
-	<link rel=stylesheet href="../css/Ji8-v01-01-04.css" />
+	<link rel=stylesheet href="../css/Ji8-v01-01-05.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--script>var __adobewebfontsappname__ = "dreamweaver";</script>
     <script src="https://use.edgefonts.net/advent-pro:n1:default;antic-didone:n4:default.js"></script-->
@@ -23,7 +23,7 @@
 <body>
 
 	<div id="layout">
-		<div id="header_bar" style="height: 216px;">
+		<div id="header_bar">
             <!-- 手機版下拉選單 -->
             <div class="mobile-dropdown">
                 <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div> <!-- 三條槓 -->
@@ -32,8 +32,8 @@
                         <li><a href="../">HOME</a></li>
                         <li><a href="../products/">PRODUCTS</a></li>
                         <li><a href="../progress/">PROGRESS</a></li>
-                        <li><a href="https://nix.global/executive-team/" target="_blank">EXECUTIVE TEAM</a></li>
-                        <li><a href="https://JASHO.ORG/" target="_blank">ABOUT US</a></li>
+                        <li><a href="https://nix.global/executive-team/" >EXECUTIVE TEAM</a></li>
+                        <li><a href="https://JASHO.ORG/" >ABOUT US</a></li>
                     </ul>
                 </div>
             </div>
@@ -44,32 +44,27 @@
 					<li><a href="../">HOME</a></li>
 					<li><a href="../products/">PRODUCTS</a></li>
 					<li><a href="../progress/">PROGRESS</a></li>
-					<li><a href="https://nix.global/executive-team/" target="_blank">EXECUTIVE TEAM</a></li>
-					<li><a href="https://JASHO.ORG/" target="_blank">ABOUT US</a></li>
+					<li><a href="https://nix.global/executive-team/" >EXECUTIVE TEAM</a></li>
+					<li><a href="https://JASHO.ORG/" >ABOUT US</a></li>
 				</ul>
 			</nav>
-			<table class="header_bar_table">
-				<tr>
-					<td class="header_bar_left-column">
+            <div class="header_bar_table">
+                <div class="header_bar_div"
 						<a href="../"><img src="../images/JI83.png" alt="Logo"  class="responsive-logo"></a>
-					</td>
-					<td class="header_bar_right-column">
-						<div id="hWord_bar">
-							<br>
+                </div>
+                <div class="hWord_bar">
 							<a style="color:#67b9cd;">Welcome to &nbsp;</a>
-							<a href="../" style="color: rgba(255,201, 201,.9)">Ji8.net</a>
+							<a href="../" style="color: rgba(255,201, 201,.9);">Ji8.net</a>
 							<a style="color:#67b9cd;">&nbsp;and&nbsp;</a>
-							<a href="https://jasho.org" target="_blank"
+							<a href="https://jasho.org" 
                                 style="color: rgba(255,201, 201,.9);">JASHO.ORG</a>
 							<br>
 							<br>
 							<a  class="phoenix-text"> &nbsp; &nbsp; &nbsp; &nbsp;Phoenix in ERA
                                 of&nbsp;iX&nbsp;Computing</a>
 						</div>
-					</td>
-				</tr>
-			</table>
-		</div>
+            </div>
+        </div>
 		<!-- 內容 -->
 		<div id="ji8_main_progree">
 			<table>
@@ -92,7 +87,7 @@
 					<td class="project-name">Project Athena 85</td>
 					<td
 						class="project-desc">
-						<span style="text-align: left"></span>IN Project iVilla. Through integration of technologies in domain hosting, WiMAX, voice switching, 
+						IN Project iVilla. Through integration of technologies in domain hosting, WiMAX, voice switching, 
                     IP switching, data switch, data transport, and portability, Ji8.net will begin convert buildings in iBuilding.
 					</td>
 				</tr>
@@ -137,23 +132,31 @@
 		</div>
 	</div>
 	<div id="tweet">
-		<div class="container">
-			<blockquote class="tweet-blockquote">
-				<table class="tweet-table">
-					<tr>
-						<td class="left-column"><span>iNFiNiTE iNTEGRATiON ‧ iNTEGRATE iNFiNiTi</span></td>
-								<td class="right-column">
-                            <span>Contact US: <a href="mailto:Ji8@Ji8.net"  class="email-link">Ji8@Ji8.net</a></span>
-                        </td>
-					</tr>
-					<tr>
-						<td class="left-column"><span>無限整合 ‧ 整合無限</span></td>
-						<td class="right-column">
-                            <span class="footer-text">Ji8.net &copy; 2020</span>
-						</td>
-					</tr>
-				</table>
-			</blockquote>
+		<div id="split_styleA" class="container">
+			<div class="row">
+				<div class="box left"><span>iNFiNiTE iNTEGRATiON ‧ iNTEGRATE iNFiNiTi</span></div>
+				<div class="box right"><span>Contact US: <a href="mailto:Ji8@Ji8.net"
+							class="email-link">Ji8@Ji8.net</a></span></div>
+			</div>
+			<div class="row">
+				<div class="box left"><span>無限整合 ‧ 整合無限</span></div>
+				<div class="box right"><span class="footer-text">Ji8.net &copy; 2020</span></div>
+			</div>
+		</div>
+		<div id="split_styleB" class="container">
+			<div class="row">
+				<div class="box left"><span>iNFiNiTE iNTEGRATiON ‧ iNTEGRATE iNFiNiTi</span></div>
+			</div>
+			<div class="row">
+				<div class="box left"><span>無限整合 ‧ 整合無限</span></div>
+			</div>
+			<div class="row">
+				<div class="box left"><span>Contact US: <a href="mailto:Ji8@Ji8.net"
+							class="email-link">Ji8@Ji8.net</a></span></div>
+			</div>
+			<div class="row">
+				<div class="box left"><span class="footer-text">Ji8.net &copy; 2020</span></div>
+			</div>
 		</div>
 	</div>
     <script>
@@ -165,21 +168,6 @@
 					menu.style.display = "block";
 				}
 			}
-
-			// 確保手機點擊時觸發
-			document.querySelector(".hamburger-menu").addEventListener("click", function(event) {
-				event.stopPropagation(); // 防止點擊事件被 body 捕捉
-				toggleMenu();
-			});
-
-			// 點擊其他地方關閉選單
-			document.addEventListener("click", function(event) {
-				var menu = document.getElementById("mobile-nav");
-				var hamburger = document.querySelector(".hamburger-menu");
-				if (menu.style.display === "block" && !menu.contains(event.target) && !hamburger.contains(event.target)) {
-					menu.style.display = "none";
-				}
-			});
     </script>
 </body>
 

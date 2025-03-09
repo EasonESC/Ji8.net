@@ -52,55 +52,15 @@ h6 {
 	/*margin-left: 20px;*/
 	/* 設定左邊界基準 */
 	background: #faf0f8;
+	width: 100vw;
+    
+}
+/* 設定版面框度*/
+
+#ji8_main,.nav-links ,.header_bar_table,.container,#ji8_main_products{
+	width: 1100px;
 }
 
-/* LOGO 部分 */
-#logo_bar {
-	display: flex;
-	align-items: center;
-	text-align: center;
-	/* LOGO 圖片與其他元素基線對齊 */
-	margin-left: 20px;
-}
-
-#hWord_bar {
-	text-align: center;
-	/* 文字區塊的文字居中 */
-	margin-top: 20px;
-	line-height: 1.5;
-	white-space: nowrap; 
-	text-align: center; 
-	font-family: Arial, sans-serif; 
-	text-align: right; 
-	position: relative; 
-	z-index: 2;
-}
-
-/* 所有超連結的基本樣式 */
-.header_bar_right-column a {
-    white-space: nowrap; /* 防止文字換行 */ 
-	/* 移除底線 */
-    /* text-decoration: none; */
-}
-
-/* 特定顏色設定 */
-.header_bar_right-column a:nth-child(1),
-.header_bar_right-column a:nth-child(3),
-.header_bar_right-column a:nth-child(5) {
-    color: #67b9cd;
-}
-
-.header_bar_right-column a:nth-child(2),
-.header_bar_right-column a:nth-child(4) {
-    color: rgba(255, 201, 201, 0.9);
-}
-
-/* Phoenix in ERA of iX Computing 樣式 */
-.phoenix-text {
-    color: #67b9cd;
-    /* display: block; 讓它獨占一行 */
-    /* margin-top: 10px; */
-}
 
 /* 導覽列 */
 #nav ul {
@@ -115,19 +75,18 @@ h6 {
 
 .nav-links ul {
 	/* list-style: none; */
-	background-color: #faf0f8;
+	/* background-color: #faf0f8; */
     white-space: nowrap;
     gap: 20px;
-    background: #faf0f8;
+    /* background: #faf0f8; */
     height: 100%; /* 請確保父容器高度為100%或已設定具體高度 */
     margin: 0;
     padding: 0;
-    display: flex;
     align-items: center;
     display: flex;             /* 使用 flexbox 來排列項目 */
     justify-content: space-between; /* 使每個項目平均分布 */
-    margin-left: 25px;
-    margin-right: 40px;
+    /* margin-left: -15px;
+    margin-right: -15px; */
 }
 
 .nav-links li {
@@ -135,17 +94,17 @@ h6 {
 }
 
 .nav-links {
-    position: fixed;
-    width: 100vw;
+    /* position: fixed; */
     height: 66px;
     overflow: hidden;
-    background: #faf0f8;
+    /* background: #faf0f8; */
+    margin: 0 auto;
 	z-index: 9999; /* 設定高層級 */
 }
 
 
 .nav-links ul li {
-	padding: 10px 20px;
+	/* padding: 10px 20px; */
     list-style: none;
 }
 
@@ -156,24 +115,40 @@ h6 {
 
 .nav-links ul li a {
 	/* text-decoration: none; */
-	color: #171717;
+	color: #ffffff;
 	font-family: 'Times New Roman';
 	font-size: 14pt;
 	font-weight: 400;
 	font-style: normal;
 }
-.text-section {
-    display: flex;
-    flex-direction: column; /* 讓標題與段落垂直排列 */
-}
+
 .nav-links ul li a:hover {
-	background-color: #ddd;
+	/* background-color: #ddd; */
 }
-.content-wrapper {
-    display: flex;
-    align-items: center; /* 讓文字與圖片垂直置中 */
+
+/* LOGO 部分 */
+#logo_bar {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	/* LOGO 圖片與其他元素基線對齊 */
 }
-#hWord_bar a {
+
+.hWord_bar {
+	text-align: center;
+	/* 文字區塊的文字居中 */
+	width: 50%;
+	margin-top: 50px;
+	line-height: 1.5;
+	white-space: nowrap; 
+	text-align: center; 
+	font-family: Arial, sans-serif; 
+	text-align: right; 
+	position: relative; 
+	z-index: 2;
+}
+
+.hWord_bar a {
 	/* display: block; */
 	font-weight: 220;
 	line-height: 0;
@@ -192,14 +167,34 @@ h6 {
 	/* 寬度設置為視窗寬度 */
 }
 
+
+
+
+/* Phoenix in ERA of iX Computing 樣式 */
+.phoenix-text {
+    color: #67b9cd;
+    /* display: block; 讓它獨占一行 */
+    /* margin-top: 10px; */
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column; /* 讓標題與段落垂直排列 */
+}
+.content-wrapper {
+    display: flex;
+    align-items: center; /* 讓文字與圖片垂直置中 */
+}
+
 #ji8_main  {
+    display: flex;
 	/* position: relative;
 	background: #fff; */
 	/* clip: rect(auto, 10cm, auto, auto); */
 	/* overflow: auto; */
 	/* text-decoration: none; */
-	width: 100vw;
 	/* 寬度設置為視窗寬度 */
+	margin: 0 auto;
 }
 #ji8_main  {
 	background: #faf0f8;
@@ -207,7 +202,7 @@ h6 {
 	
 }
 
-#ji8_main_products #ji8_main_progree #ji8_main_products{
+#ji8_main_products ,#ji8_main_progree, #ji8_main_products{
 	background: #faf0f8;
 }
 #ji8_main_progree table {
@@ -253,17 +248,18 @@ h6 {
     font-family: "Times New Roman";
 	
 }
+
+#ji8_main_products {
+    margin: 0 auto;
+}
 #ji8_main_products  table {
 	text-align: center; 
-	width: calc(100% - 80px); 
-	margin-left: 30px; 
-	margin-right: 30px;
 }
 
 #ji8_main_products .title {
     width: 15%;
     text-align: left;
-    padding: 40px 20px 30px 20px;
+    padding: 40px 20px 30px 0px;
 }
 
 #ji8_main_products .title span {
@@ -279,7 +275,7 @@ h6 {
 #ji8_main_products .project-name {
     /* width: 15%; */
     text-align: left;
-    padding: 0px 20px 20px 40px;	
+    padding: 0px 20px 20px 20px;	
 }
 #ji8_main_products .project-name span{
 	font-weight: bold; 
@@ -429,46 +425,34 @@ h6 {
 	background: url(../images/asesoresenti.jpg) no-repeat bottom center;
 	background-attachment: fixed;
 	/* background-size: cover; */
-	background-size: 2400px;
+	/* background-size: 2400px; */
+	background-size:100vw;
 	/* 背景保持原始大小 */
 	background-position: center -142px;
 	/* 水平居中，向下偏移 50px */
 	text-align: center;
-	height: 308px;
+	height: 260px;
 	width: 100vw;
 	/* 寬度設置為視窗寬度 */
-	margin: 0;
 	/* 移除外邊距，避免偏移 */
 	padding: 0;
 	/* 移除內邊距，確保對齊 */
 	box-sizing: border-box;
 	/* 確保寬度包含邊框與內邊距 */
+	margin: 20px auto;
 }
 
 .header_bar_table {
-	text-align: center; 
+	display: flex;
 	height: 140px; 
-	width: calc(100% - 100px); 
-	margin-left: 40px; 
-	margin-right: 40px; 
-	margin-top: 55px;
-}
-.header_bar_table tr {
+	margin: 20px auto;
 }
 
-.header_bar_table td {
-	padding-left: 0px; 
-	vertical-align: BOTTOM;
+.header_bar_div {
+	display: flex; 
+	width: 50%;
 }
 
-.header_bar_left-column {
-    text-align: left;
-}
-
-/* 右側欄位樣式 */
-.header_bar_right-column {
-    text-align: right;
-}
 
 /* 三條槓按鈕 */
 .hamburger {
@@ -496,13 +480,6 @@ h6 {
 	font-size: 103%;
 }
 
-/* 註釋 */
-blockquote {
-	border-left: solid 0.5em #ddd;
-	padding: 1em 0 1em 2em;
-	font-style: italic;
-}
-
 /* Twitter 區域 */
 #tweet {
 	position: relative;
@@ -511,6 +488,7 @@ blockquote {
 	background-attachment: fixed;
 	background-size: cover;
 	height: 195px;
+	/* height: 500px; */
 	width: 100vw;
 	/* width: 1520px; */
 }
@@ -531,55 +509,15 @@ blockquote {
 	border-color: rgba(255, 255, 255, .1);
 }
 
-/* 外層容器樣式 */
-#tweet {
-    height: 150px;
-}
 
 /* Blockquote 內部調整 */
-.tweet-blockquote {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: auto;
-    margin: 0;
-}
 #split_styleA{
-	display: table;
+	display: block;
 }
 #split_styleB{
 	display: none;
 }
 
-/* 表格樣式 */
-.tweet-table {
-    color: rgba(255, 255, 255, .6);
-    border-collapse: collapse;
-    /* margin-left: 50px; */
-    height: 100px;
-	
-	/* height: 140px;  */
-	width: calc(100% - 100px); 
-	margin-left: 40px; 
-	margin-right: 80px; 
-}
-
-/* 單元格間距和對齊 */
-.tweet-table td {
-    padding: 10px 0;
-    /* text-align: left; */
-}
-
-/* 左側欄位樣式 */
-.left-column {
-    text-align: left;
-}
-
-/* 右側欄位樣式 */
-.right-column {
-    text-align: right;
-}
 
 /* 連結樣式 */
 .email-link {
@@ -593,27 +531,10 @@ blockquote {
     font-family: Arial, sans-serif;
 }
 
-#tweet blockquote {
-	/* padding: 1em 4em; */
-	padding: 20px 0px;
-	/* line-height: 1.5em; */
-	font-size: 1.8em;
-	text-align: center;
-	position: relative;
-	border: none;
-	margin: 0;
-	font-weight: 300;
-	color: rgba(255, 255, 255, .6);
-	font-style: italic;
-}
-
 .container {
-	width: 100vw;
 	/* 寬度設置為視窗寬度 */
 	/* margin-left: 30px; */
-	margin-right: auto;
-	margin-top: auto;
-	margin-bottom: auto;
+	margin: 10px auto;
 	/* padding: 0; */
 	border: 0;
 	font-size: 100%;
@@ -623,25 +544,55 @@ blockquote {
 	height: 100%;
 }
 
-/* Modifiers */
-
-.container.small {
-	width: 900px;
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+.box {
+	padding: 30px 0px 0px 0px;
+	font-size: 1.8em;
+	text-align: center;
+	position: relative;
+	border: none;
+	font-weight: 300;
+	color: rgba(255, 255, 255, .6);
+	font-style: italic;
+    align-items: center;
+    height: auto;
+    margin: 0;
 }
 
-.container.big {
-	width: 100%;
-	max-width: 1500px;
-	min-width: 1200px;
+
+.tweet_hel{
+    width: 50%;
+    height: 100%;
 }
 
-span {
-	margin-top: auto;
-	margin-right: auto;
-	margin-bottom: auto;
+.tweet_hel {
+	/* padding: 1em 4em; */
+	/* line-height: 1.5em; */
+	font-size: 1.8em;
+	text-align: center;
+	position: relative;
+	border: none;
+	/* margin: 0; */
+	font-weight: 300;
+	color: rgba(255, 255, 255, .6);
+	font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    margin: 0;
+}
+
+.left {  width: 60%;text-align: left; }
+.right { width: 40%; text-align: right; }
+#tweet span {
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	/* font-size: 100%; */
 	vertical-align: baseline;
 	text-align: left;
 	font-family: "Times New Roman";
@@ -652,9 +603,6 @@ span {
 	width: auto;
   }
 
-.nav-links.show {
-    display: block;
-}
 .main-table {
     table-layout: fixed; /* 確保列寬平均分配 */
     border-collapse: collapse;
@@ -667,20 +615,127 @@ span {
 	margin-top: 40px;
 }
 
-.main-table td {
+.main_table_hel{
     width: 50%;
     height: 100%;
-    word-wrap: break-word; 
+}
+
+@media screen and (max-width: 1200px) {
+	#ji8_main,.nav-links ,.header_bar_table,.container,#ji8_main_products{
+		width: 900px;
+	}
+	#header_bar {
+		height: 220px;
+	}
+	.hWord_bar a {
+		font-size: 30px;
+		line-height: 0.5;
+	}
+	.responsive-logo {
+		height: 80px;
+		width: auto;
+	}
+	.box {
+		font-size: 25px;
+	}
+}
+@media screen and (max-width: 1000px) {
+	#ji8_main,.nav-links ,.header_bar_table,.container,#ji8_main_products{
+		width: 768px;
+	}
+	.box {
+		font-size: 20px;
+	}
 }
 
 /* 響應式設計：當螢幕小於 768px (手機) 時 */
 @media screen and (max-width: 768px) {
 	
+	#ji8_main,.nav-links ,.header_bar_table,.container,#ji8_main_products,#ji8_main_progree{
+		width: 100vw;
+	}
+	#header_bar {
+		height: 150px;
+		background-position: 0px 0px;
+    	margin: 0;
+	}
+	.header_bar_table {
+        width: 100%;
+        display: block;
+        /* margin-left: 20px; */
+    }
+	.header_bar_div{
+		margin-left: 30px;
+	}
 	#split_styleA{
 		display: none;
 	}
 	#split_styleB{
-		display: table;
+		display: block;
+	}
+	.hWord_bar {
+		margin-top: 10px;
+		margin-left: 30px;
+		line-height: 0.8;
+		text-align: left;
+	}
+    /* 調整文字樣式，並保持靠左 */
+    .hWord_bar a {
+        /* display: block; */
+        margin-bottom: 5px; /* 增加文字行間距 */
+        text-align: left; /* 靠左顯示 */
+        font-size: 20px; /* 缩小字形 */
+    }
+
+	#ji8_main_products  table {
+		text-align: center;  
+		margin-left: 0px; 
+	}
+	#ji8_main_products .title {
+		padding: 0px 10px 10px 30px;
+
+	}
+	#ji8_main_products .project-name {
+		padding: 0px 20px 10px 40px;
+	}
+
+	#ji8_main_products .project-desc {
+		padding: 0px 30px 20px 60px;
+		
+	}
+
+	#ji8_main_progree table {
+		margin: 0px; 
+		width:auto;
+	}
+	#ji8_main_progree .title {
+		padding: 0px 20px 10px 30px;
+		
+	}
+	#ji8_main_progree .project-name {
+		padding: 0px 10px 10px 40px;
+		
+	}
+	
+	/* 專案描述（右側） */
+	#ji8_main_progree .project-desc {
+		padding: 0px 30px 20px 0px;
+		
+	}
+
+	#ji8_main {
+        flex-direction: column; /* 改為垂直顯示 */
+        align-items: center; /* 中央對齊 */
+    }
+
+	.main_table_hel{ 
+		/* width: 80%; */
+    width: calc(100vw - 60px);
+		}
+		
+	.ji8_main_pic_L{
+		text-align: center; 
+		margin: 0 auto;
 	}
     .nav-links {
         display: none; /* 隱藏電腦版導覽列 */
@@ -749,89 +804,36 @@ span {
         margin-left: 0; /* 圖片左邊不留空間 */
     }
 
-    .header_bar_table {
-        width: 100%; /* 表格佔滿螢幕寬度 */
-        display: block; /* 將表格變為區塊元素 */
-		margin-left: 20px;
-    }
 
-    .header_bar_left-column,
-    .header_bar_right-column {
-        display: block; /* 讓每一欄位都成為區塊 */
-        width: 100%; /* 欄位寬度佔滿 */
-        /* text-align: center;  */
-        margin-bottom: 10px; /* 欄位間距 */
-        text-align: left; /* 文字靠左 */
-    }
-	.header_bar_left-column img{
-		width: 280px;
-		height: auto;
-	}
 
-    .header_bar_right-column {
-	}
+
+/* Phoenix in ERA of iX Computing 樣式 */
+.phoenix-text {
+    color: #67b9cd;
+    /* display: block; 讓它獨占一行 */
+    /* margin-top: 10px; */
+}
 	.heading{
         font-size: 20px; /* 缩小字形 */
 	}
-	#hWord_bar {
-		margin-top: 0px;
-		line-height: 0.8;
-		text-align: left;
-	}
-    /* 調整文字樣式，並保持靠左 */
-    #hWord_bar a {
-        /* display: block; */
-        margin-bottom: 5px; /* 增加文字行間距 */
-        text-align: left; /* 靠左顯示 */
-        font-size: 20px; /* 缩小字形 */
-    }
 
-    .phoenix-text {
-        /* display: block;  */
-        margin-top: 10px; /* 增加上方間距 */
-        text-align: left; /* 文字靠左顯示 */
-        font-size: 20px; /* 縮小字型 */
-    }
 
     /* 如果你需要對 'Ji8.net' 和 'JASHO.ORG' 進行特殊字型大小設定 */
     .phoenix-text a {
         font-size: 20px; /* 設定這些文字的字型大小 */
     }
-
 	#tweet {
+		padding: 0; 
+    }
+	.box {
         font-size: 14px; /* 基本文字大小 */
+		padding: 10px 10px 0px 30px; 
     }
 
-	#tweet blockquote {
-		padding: 1em 0 1em 2em;
-		line-height: 1.2;
+	.left {
+		width: 90%;
+		text-align: left;
 	}
-    .tweet-blockquote {
-        font-size: 14px; /* 確保 blockquote 內的文字縮小 */
-    }
-
-    .tweet-table {
-		margin-left: 25px;
-        width: 100%; /* 使表格填滿屏幕寬度 */
-    }
-
-    .tweet-table tr{
-    }
-    .tweet-table td{
-		padding: 10px 0;
-    }
-    /* 左欄和右欄的文字調整 */
-    .left-column, .right-column {
-        font-size: 12px; /* 將左邊和右邊的文字縮小 */
-		line-height: 0;
-	}
-    
-
-    .left-column span, .right-column span {
-		/* 確保 span 元素內文字縮小 */
-        /* font-size: 12px;  */
-    }
-
     /* 特別調整 email 和 footer 的字型大小 */
     .email-link {
         font-size: 12px; /* 設定 email 連結的字型大小 */
@@ -840,34 +842,9 @@ span {
     .footer-text {
         font-size: 10px; /* footer 文字縮小 */
     }
-	#ji8_main_progree .title {
-		padding: 40px 20px 30px 0px;
-		
-	}
-	#ji8_main_progree table {
-		width: calc(100% - 50px);
-	}
-	#ji8_main_progree .project-name {
-		padding: 0px 20px 20px 20px;
-	}
 	
-	/* 專案描述（右側） */
-	#ji8_main_progree .project-desc {
-		padding-left: 00px;
-		padding-bottom: 20px;
-		
-	}
-	#ji8_main_products  table {
-		text-align: center; 
-		width: calc(100% - 20px); 
-		margin-left: 0px; 
-	}
 	.inner-table{
 		width: 280px;
 
-	}
-	.ji8_main_pic_L img{
-		width: 280px;
-		height: auto;
 	}
 }
